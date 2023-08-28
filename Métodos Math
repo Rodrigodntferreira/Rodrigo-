@@ -1,0 +1,33 @@
+public class MétodosMathRevisão {
+*/
+    public static void main(String[] args) {
+        /*Escreva um programa que calcule e exiba a soma dos quadrados dos 20 primeiros
+    números inteiros positivos ímpares a partir do número informado pelo usuário menor
+    que 10 e maior que zero
+
+*/
+        int numero = 0, cont = 1;
+
+        double quadrado, soma = 0;
+
+        do {
+
+            numero = Integer.parseInt(JOptionPane.showInputDialog("informe um numero maior que 0 e menos que 10: "));
+
+        } while (numero <= 0 || numero >= 10);
+
+        do {
+
+            if (numero % 2 != 0) {
+                quadrado = Math.pow(numero, 2);
+                soma+=quadrado;
+                cont++;
+                
+                System.out.println(cont + " o valor " +numero+ " elevado ao quadrado  = " +quadrado+ "soma dos quadrado: "  +soma); 
+              
+            }
+               numero++; 
+        } while(cont <=20);
+    }
+}
+
