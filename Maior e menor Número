@@ -1,0 +1,23 @@
+   /*
+         Escreva um programa que leia um conjunto de números positivos que serão
+        informados pelo usuário, e apresente qual foi o maior e o menor a cada interação,
+        isso é cada vez que o usuário informar um número valide se ele é o menor ou o
+        maior já digitado. Quando o usuário desistir de informar ele deve ter opção de sair.
+        (while).
+     
+         */
+            String op = "S";
+            int maior = 0, menor = Integer.MAX_VALUE;
+
+            do {
+                int numero = Integer.parseInt(JOptionPane.showInputDialog("Informe um número: "));
+                menor = Math.min(numero, menor);
+                maior = Math.max(numero, menor);
+                JOptionPane.showMessageDialog(null,"o menor valor é: "+menor+ "\nO maior valor digitado é: "+ maior );
+
+                op = JOptionPane.showInputDialog("Deseja Sair?\nS\nN").toUpperCase();
+            } while (op.equals("S"));
+
+        }
+
+    }
