@@ -1,0 +1,38 @@
+# Rodrigo-
+T. Desenvolvimento 
+import java.text.Normalizer;
+import javax.swing.JOptionPane;
+
+public class MetadoStartsString {
+
+    public static void main(String[] args) {
+
+        String[] nome = {"maria judet", "Maria Julieta", "Maria Cleni", "Jose Silve", "jade Barbosa",
+            "Lucas Silva", "Elis Regina", "Lurdes luana", "Ja te Disse", "Eu sou", "Poco Dinho"};
+
+        String sobrenome = (JOptionPane.showInputDialog("informe o Sobre Nome: "));
+        int cont=0;
+        for (int i = 0; i < 10; i++) {
+            if (nome[i].endsWith(sobrenome)) {
+                System.out.println("nome: " + nome[i]);
+                cont++;
+            }
+        }
+    
+    if(cont == 0){
+    JOptionPane.showMessageDialog(null, "Nenhum, Sobre Nome encontrdo");
+    }
+    cont  = 0;
+    String nomeP = JOptionPane.showInputDialog("Informe um nome: ");
+       for (int i = 0; i < 10; i++){
+        if (nome[i].startsWith(nomeP)) {
+                System.out.println("nome: " + nome[i]);
+                cont++;
+                        
+}
+}
+if(cont==0){
+    JOptionPane.showMessageDialog(null, "Nenum nome encontrado: ");
+}       
+}
+}
