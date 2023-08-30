@@ -1,0 +1,16 @@
+
+package metodo;
+
+import javax.swing.JOptionPane;
+
+
+public class Trim {
+    public static void main(String[] args) {
+        
+        String fraseDoDia = JOptionPane.showInputDialog("Diegite a frse do dia: ");
+        JOptionPane.showMessageDialog(null,"frase do dia sem TRIM: "+fraseDoDia);
+        JOptionPane.showMessageDialog(null,"Frase do dia com TRIM: " +fraseDoDia.trim());
+        
+    }
+    
+}
